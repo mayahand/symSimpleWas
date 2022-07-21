@@ -2,3 +2,8 @@
 /MySimpleWAS/target/
 /ServerTimeServlet/.settings/
 /ServerTimeServlet/bin/
+/MySimpleWAS/.classpath
+/ServerTimeServlet/.classpath
+/MySimpleWAS/.project
+/ServerTimeServlet/.project
+/MySimpleWAS/wasRoot/log/ymson-was.log
