@@ -1,0 +1,44 @@
+{
+	"server": {
+		"port": "8080",
+		"max_threads": "50",
+		"mapping": {
+			"tServlet1": "TestServlet",
+			"tServlet2": "com.ymson.mywas.TestServlet",
+			"serverTime": "com.ymson.myservlet.ServerTimeServlet"
+		},
+		"servlets": "./wasRoot/servlets"
+	},
+	"virtualHost": [
+		{
+			"url": [
+				"localhost"
+			],
+			"httpRoot": "./wasRoot/httpRoot/localhostRoot",
+			"indexPage": [
+				"index.htm",
+				"index.html"
+			],
+			"errorPage": {
+				"403": "./error/error403.htm",
+				"404": "./error/error404.htm",
+				"500": "./error/error500.htm"
+			}
+		},
+		{
+			"url": [
+				"127.0.0.1"
+			],
+			"httpRoot": "./wasRoot/httpRoot/callbackRoot",
+			"indexPage": [
+				"index.htm",
+				"index.html"
+			],
+			"errorPage": {
+				"403": "./error/error403.htm",
+				"404": "./error/error404.htm",
+				"500": "./error/error500.htm"
+			}
+		}
+	]
+}
